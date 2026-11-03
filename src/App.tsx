@@ -1,3 +1,4 @@
+import { InfoModal } from './components/InfoModal';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   AimMode,
@@ -83,6 +84,7 @@ function createInitialPlayer(heroId: HeroId, width: number, height: number): Pla
 }
 
 export function App() {
+  const [showInfo, setShowInfo] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   // React UI state
@@ -1431,6 +1433,18 @@ export function App() {
           }}
         />
       )}
+
+      {/* Bouton Infos technique */}
+      <button
+        onClick={() => setShowInfo(true)}
+        className="fixed top-2.5 right-2.5 z-[100] flex items-center gap-1 rounded-lg border border-slate-700/60 bg-slate-900/80 px-2 py-1 text-xs text-amber-200 shadow-md backdrop-blur hover:bg-slate-800 transition cursor-pointer select-none"
+        title="Comment ce jeu a été fait"
+        aria-label="Infos sur le jeu"
+      >
+        <span>ℹ️</span>
+        <span className="hidden sm:inline">Infos</span>
+      </button>
+      <InfoModal isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </main>
   );
 }

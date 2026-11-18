@@ -16,5 +16,5 @@ Un jeu de survie et défense de sanctuaire au coeur d'un cimetière hanté. Choi
 - 100% statique, sans serveur ni collecte de donnees
 
 ## Contact
-- Email : geoffroy.streit@gmail.com
+- Email : geoffroy.streit@ik.me
 - Plateforme : https://games.hylst.fr/

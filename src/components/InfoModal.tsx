@@ -36,7 +36,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
             <strong className="text-red-400">Musique &amp; sons :</strong> Web Audio API avec générateur d ondes pour pulsations arcaniques, incantations de reliques et explosions de braise.
           </p>
           <p>
-            <strong className="text-red-400">Interactions :</strong> Contrôles clavier ZQSD / Flèches, mode ciblage libre au curseur ou ciblage automatique pour mobile, bouton d arcane.
+            <strong className="text-red-400">Interactions :</strong> Contrôles clavier ZQSD / Flèches, mode ciblage libre au curseur ou ciblage automatique, bouton d arcane.
           </p>
           <p>
             <strong className="text-red-400">Architecture :</strong> Rendu scindé (graveyardRenderer), modales de niveau et de pause indépendantes, gestionnaire de reliques (relics.ts) avec modificateurs statistiques empilables.
@@ -46,6 +46,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ isOpen, onClose }) => {
           </p>
         </div>
 
+        <p className="px-4 pb-1 text-center text-[11px] text-slate-400">Créé par Geoffroy Streit (Hylst) avec l'aide d'une IA.</p>
         <div className="bg-slate-950 p-3 sm:p-4 text-center border-t border-slate-800">
           <button
             onClick={onClose}

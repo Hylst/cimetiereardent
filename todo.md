@@ -9,3 +9,7 @@
 ## Idees futures
 - [ ] Ajout de modes de difficulte supplementaires
 - [ ] Nouveaux defis saisonniers
+
+## Audit du 27/11/2026
+
+- [ ] Ajouter un joystick tactile pour le déplacement, ou retirer la promesse tactile de la modale.
